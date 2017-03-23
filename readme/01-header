@@ -1,0 +1,4 @@
+# [monad-id](https://bagrounds.gitlab.io/monad-id)
+
+Id(2).map(x => x + 2).join() === 4 // true
+
