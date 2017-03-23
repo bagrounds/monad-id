@@ -1,7 +1,7 @@
 {
   "name": "monad-id",
   "version": "0.2.0",
-  "description": "((a1, a2, ..., an) -> x) -> (a1 -> a2 -> ... -> an -> x)",
+  "description": "Id(2).map(x => x + 2).join() === 4 // true",
   "main": "src/index.js",
   "scripts": {
     "pretest": "npm run lint",
