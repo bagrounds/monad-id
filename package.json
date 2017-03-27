@@ -39,5 +39,8 @@
     "showdown": "^1.5.4",
     "tap": "^10.3.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "fun-compose": "^0.3.0",
+    "fun-monad": "^0.1.1"
+  }
 }

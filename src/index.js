@@ -5,8 +5,17 @@
 ;(function () {
   'use strict'
 
+  /* imports */
+  var compose = require('fun-compose')
+  var funMonad = require('fun-monad')
+
   /* exports */
-  module.exports = Id
+  module.exports = funMonad({
+    type: Id,
+    of: idOf,
+    map: idMap,
+    join: idJoin
+  })
 
   /**
    *
@@ -24,12 +33,16 @@
     this.value = value
   }
 
-  Id.prototype.map = function map (f) {
-    return Id(f(this.value))
+  function idOf (value) {
+    return Id(value)
   }
 
-  Id.prototype.join = function join () {
-    return this.value
+  function idJoin (mma) {
+    return mma.value
+  }
+
+  function idMap (f, ma) {
+    return [idOf, f, idJoin].reduce(compose)(ma)
   }
 })()
 
