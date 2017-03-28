@@ -40,7 +40,6 @@
     "tap": "^10.3.0"
   },
   "dependencies": {
-    "fun-compose": "^0.3.0",
     "fun-monad": "^0.1.1"
   }
 }

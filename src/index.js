@@ -6,15 +6,14 @@
   'use strict'
 
   /* imports */
-  var compose = require('fun-compose')
   var funMonad = require('fun-monad')
 
   /* exports */
   module.exports = funMonad({
     type: Id,
-    of: idOf,
-    map: idMap,
-    join: idJoin
+    of: Id,
+    map: map,
+    join: join
   })
 
   /**
@@ -33,16 +32,12 @@
     this.value = value
   }
 
-  function idOf (value) {
-    return Id(value)
-  }
-
-  function idJoin (mma) {
+  function join (mma) {
     return mma.value
   }
 
-  function idMap (f, ma) {
-    return [idOf, f, idJoin].reduce(compose)(ma)
+  function map (f, ma) {
+    return Id(f(ma.value))
   }
 })()
 
