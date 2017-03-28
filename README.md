@@ -1,6 +1,6 @@
 # [monad-id](https://bagrounds.gitlab.io/monad-id)
 
-Id(2).map(x => x + 2).join() === 4 // true
+The Identity Monad
 
 [![build-status](https://gitlab.com/bagrounds/monad-id/badges/master/build.svg)](https://gitlab.com/bagrounds/monad-id/commits/master)
 [![coverage-report](https://gitlab.com/bagrounds/monad-id/badges/master/coverage.svg)](https://gitlab.com/bagrounds/monad-id/commits/master)

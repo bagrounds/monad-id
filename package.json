@@ -1,7 +1,7 @@
 {
   "name": "monad-id",
   "version": "0.3.0",
-  "description": "Id(2).map(x => x + 2).join() === 4 // true",
+  "description": "The Identity Monad",
   "main": "src/index.js",
   "scripts": {
     "pretest": "npm run lint",
@@ -23,8 +23,9 @@
     "url": "git+ssh://git@gitlab.com/bagrounds/monad-id.git"
   },
   "keywords": [
-    "fun",
-    "curry"
+    "monad",
+    "identity",
+    "id"
   ],
   "author": "bagrounds@gmail.com",
   "license": "MIT",
