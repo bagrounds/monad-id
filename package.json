@@ -41,6 +41,7 @@
     "tap": "^10.3.0"
   },
   "dependencies": {
-    "fun-monad": "^0.1.1"
+    "fun-id": "^0.1.0",
+    "fun-monad": "^0.2.0"
   }
 }
